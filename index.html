@@ -303,7 +303,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="1-IE6怪异解析之padding与border算入宽高"><a href="#1-IE6怪异解析之padding与border算入宽高" class="headerlink" title="1.IE6怪异解析之padding与border算入宽高"></a>1.IE6怪异解析之padding与border算入宽高</h3><p>原因：未加文档声明造成非盒模型解析<br>解决方法：加入文档声明&lt;!doctype html&gt;</p>
+        <p>+description:<br>“### 1.IE6怪异解析之padding与border算入宽高<br>原因：未加文档声明造成非盒模型解析<br>解决方法：加入文档声明&lt;!doctype html&gt;</p>
 <h3 id="2-IE6在块元素、左右浮动、设定marin时造成margin双倍（双边距）"><a href="#2-IE6在块元素、左右浮动、设定marin时造成margin双倍（双边距）" class="headerlink" title="2.IE6在块元素、左右浮动、设定marin时造成margin双倍（双边距）"></a>2.IE6在块元素、左右浮动、设定marin时造成margin双倍（双边距）</h3><p>解决方法：display:inline </p>
 <h3 id="3-以下三种其实是同一种bug，其实也不算是个bug，举个例子：父标签高度20，子标签11，垂直居中，20-11-9，9要分给文字的上面与下面，怎么分？IE6就会与其它的不同，所以，尽量避免。"><a href="#3-以下三种其实是同一种bug，其实也不算是个bug，举个例子：父标签高度20，子标签11，垂直居中，20-11-9，9要分给文字的上面与下面，怎么分？IE6就会与其它的不同，所以，尽量避免。" class="headerlink" title="3.以下三种其实是同一种bug，其实也不算是个bug，举个例子：父标签高度20，子标签11，垂直居中，20-11=9，9要分给文字的上面与下面，怎么分？IE6就会与其它的不同，所以，尽量避免。"></a>3.以下三种其实是同一种bug，其实也不算是个bug，举个例子：父标签高度20，子标签11，垂直居中，20-11=9，9要分给文字的上面与下面，怎么分？IE6就会与其它的不同，所以，尽量避免。</h3><p>1）字体大小为奇数之边框高度少1px<br>解决方法：字体大小设置为偶数或line-height为偶数<br>2）line-height，文本垂直居中差1px<br>解决方法：padding-top代替line-height居中，或line-height加1或减1<br>3）与父标签的宽度的奇偶不同的居中造成1px的偏离<br>解决方法：如果父标签是奇数宽度，则子标签也用奇数宽度;如果是父标签偶数宽度，则子标签也用偶数宽度 </p>
 <h3 id="4-内部盒模型超出父级时，父级被撑大"><a href="#4-内部盒模型超出父级时，父级被撑大" class="headerlink" title="4.内部盒模型超出父级时，父级被撑大"></a>4.内部盒模型超出父级时，父级被撑大</h3><p>解决方法：父标签使用overflow:hidden </p>
@@ -334,8 +334,8 @@
 <h3 id="29-列表阶梯bug"><a href="#29-列表阶梯bug" class="headerlink" title="29.列表阶梯bug"></a>29.列表阶梯bug</h3><p>列表阶梯bug通常会在给<code>&lt;li&gt;</code>的子元素<code>&lt;a&gt;</code>使用float:left;时触发，我们本意是要做一个横向的列表(通常 是导航栏)，但IE却可能呈现出垂直的或者阶梯状。解决办法就是给<code>&lt;li&gt;</code>定义float:left;而非子元素<code>&lt;a&gt;</code>，或者给<code>&lt;li&gt;</code>定义display:inline;也可以解决。</p>
 <h3 id="30-垂直列表间隙bug"><a href="#30-垂直列表间隙bug" class="headerlink" title="30.垂直列表间隙bug"></a>30.垂直列表间隙bug</h3><p>当我们使用<code>&lt;li&gt;</code>包含一个块级子元素时，IE6(IE7也有可能)会错误地给每条列表元素（<code>&lt;li&gt;</code>）之间添加空隙。<br>解决方法：把<code>&lt;a&gt;</code>flaot并且清除float来解决这个问题；另外一个办法就是触发<code>&lt;a&gt;</code>的hasLayout（如定 义高宽、使用zoom:1;）；也可以给<code>&lt;li&gt;</code> 定义display:inline;来解决此问题；另外还有一个极有趣的方法，给包含的文本末尾添加一个空格。</p>
 <h3 id="31-IE6中的-hover"><a href="#31-IE6中的-hover" class="headerlink" title="31.IE6中的:hover"></a>31.IE6中的:hover</h3><p>在IE6中，除了(需要有href属性)才能触发:hover行为，这妨碍了我们实现许多鼠标触碰效果，但还是有一些法子是可以解决它的。最好是不要用:hover来实现重要的功能，仅仅只用它来强化效果。</p>
-<h3 id="32-IE6调整窗口大小的-Bug"><a href="#32-IE6调整窗口大小的-Bug" class="headerlink" title="32.IE6调整窗口大小的 Bug"></a>32.IE6调整窗口大小的 Bug</h3><p>当把body居中放置，改变IE浏览器大小的时候，任何在body里面的相对定位元素都会固定不动了。解决办法：给body定义position:relative;就行了。</p>
-
+<h3 id="32-IE6调整窗口大小的-Bug"><a href="#32-IE6调整窗口大小的-Bug" class="headerlink" title="32.IE6调整窗口大小的 Bug"></a>32.IE6调整窗口大小的 Bug</h3><p>当把body居中放置，改变IE浏览器大小的时候，任何在body里面的相对定位元素都会固定不动了。解决办法：给body定义position:relative;就行了。”</p>
+<contents></contents>
       
     </div>
     
