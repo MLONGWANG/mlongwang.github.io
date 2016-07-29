@@ -20,12 +20,12 @@
 3.以下三种其实是同一种bug，其实也不算是个bug，举个例子：父标签高度20，子标签11，垂直居中，20-11=9，9要分给">
 <meta property="og:type" content="article">
 <meta property="og:title" content="IE6bug">
-<meta property="og:url" content="http://yoursite.com/2015/07/30/this/index.html">
+<meta property="og:url" content="http://yoursite.com/2015/07/10/postName/index.html">
 <meta property="og:site_name" content="LONG's Blog">
 <meta property="og:description" content="1.IE6怪异解析之padding与border算入宽高原因：未加文档声明造成非盒模型解析解决方法：加入文档声明&amp;lt;!doctype html&amp;gt;
 2.IE6在块元素、左右浮动、设定marin时造成margin双倍（双边距）解决方法：display:inline 
 3.以下三种其实是同一种bug，其实也不算是个bug，举个例子：父标签高度20，子标签11，垂直居中，20-11=9，9要分给">
-<meta property="og:updated_time" content="2016-07-29T01:14:22.599Z">
+<meta property="og:updated_time" content="2016-07-29T03:09:26.100Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IE6bug">
 <meta name="twitter:description" content="1.IE6怪异解析之padding与border算入宽高原因：未加文档声明造成非盒模型解析解决方法：加入文档声明&amp;lt;!doctype html&amp;gt;
@@ -270,11 +270,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="[layout]-this" class="article article-type-[layout]" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="[layout]-postName" class="article article-type-[layout]" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/07/30/this/" class="article-date">
-      <time datetime="2015-07-30T01:40:16.000Z" itemprop="datePublished">2015-07-30</time>
+      <a href="/2015/07/10/postName/" class="article-date">
+      <time datetime="2015-07-10T08:29:16.000Z" itemprop="datePublished">2015-07-10</time>
 </a>
 
 
@@ -333,9 +333,9 @@
 <h3 id="25-3像素间距bug"><a href="#25-3像素间距bug" class="headerlink" title="25.3像素间距bug"></a>25.3像素间距bug</h3><p>在IE6中，当文本(或无浮动元素)跟在一个浮动的元素之后，文本和这个浮动元素之间会多出3像素的间隔。<br>给浮动层添加 display:inline 和 -3px 负值margin<br>给中间的内容层定义 margin-right 以纠正-3px</p>
 <h3 id="26-IE下z-index的bug"><a href="#26-IE下z-index的bug" class="headerlink" title="26.IE下z-index的bug"></a>26.IE下z-index的bug</h3><p>在IE浏览器中，定位元素的z-index层级是相对于各自的父级容器，所以会导致z-index出现错误的表现。解决方法是给其父级元素定义z-index，有些情况下还需要定义position:relative。</p>
 <h3 id="27-Overflow-Bug"><a href="#27-Overflow-Bug" class="headerlink" title="27.Overflow Bug"></a>27.Overflow Bug</h3><p>在IE6/7中，overflow无法正确的隐藏有相对定位position:relative;的子元素。解决方法就是给外包容器.wrap加上position:relative;。 </p>
-<h3 id="28-横向列表宽度bug"><a href="#28-横向列表宽度bug" class="headerlink" title="28.横向列表宽度bug"></a>28.横向列表宽度bug</h3><p>如果你使用float:left;把<li>横向摆列，并且</li><li>内包含的<a>（或其他）触发了 hasLayout，在IE6下就会有错误的表现。解决方法很简单，只需要给<a>定义同样的float:left;即可。</a></a></li></p>
-<h3 id="29-列表阶梯bug"><a href="#29-列表阶梯bug" class="headerlink" title="29.列表阶梯bug"></a>29.列表阶梯bug</h3><p>列表阶梯bug通常会在给<li>的子元素<a>使用float:left;时触发，我们本意是要做一个横向的列表(通常 是导航栏)，但IE却可能呈现出垂直的或者阶梯状。解决办法就是给<li>定义float:left;而非子元素<a>，或者 给<li>定义display:inline;也可以解决。</li></a></li></a></li></p>
-<h3 id="30-垂直列表间隙bug"><a href="#30-垂直列表间隙bug" class="headerlink" title="30.垂直列表间隙bug"></a>30.垂直列表间隙bug</h3><p>当我们使用<li> 包含一个块级子元素时，IE6(IE7也有可能)会错误地给每条列表元素（</li><li>）之间添加空隙。<br>解决方法：把<a>flaot并且清除float来解决这个问题；另外一个办法就是触发<a>的hasLayout（如定 义高宽、使用zoom:1;）；也可以给<li> 定义display:inline;来解决此问题；另外还有一个极有趣的方法，给包含的文本末尾添加一个空格。</li></a></a></li></p>
+<h3 id="28-横向列表宽度bug"><a href="#28-横向列表宽度bug" class="headerlink" title="28.横向列表宽度bug"></a>28.横向列表宽度bug</h3><p>如果你使用float:left;把<code>&lt;li&gt;</code>横向摆列，并且<code>&lt;li&gt;</code>内包含的<code>&lt;a&gt;</code>（或其他）触发了 hasLayout，在IE6下就会有错误的表现。解决方法很简单，只需要给<code>&lt;a&gt;</code>定义同样的float:left;即可。</p>
+<h3 id="29-列表阶梯bug"><a href="#29-列表阶梯bug" class="headerlink" title="29.列表阶梯bug"></a>29.列表阶梯bug</h3><p>列表阶梯bug通常会在给<code>&lt;li&gt;</code>的子元素<code>&lt;a&gt;</code>使用float:left;时触发，我们本意是要做一个横向的列表(通常 是导航栏)，但IE却可能呈现出垂直的或者阶梯状。解决办法就是给<code>&lt;li&gt;</code>定义float:left;而非子元素<code>&lt;a&gt;</code>，或者给<code>&lt;li&gt;</code>定义display:inline;也可以解决。</p>
+<h3 id="30-垂直列表间隙bug"><a href="#30-垂直列表间隙bug" class="headerlink" title="30.垂直列表间隙bug"></a>30.垂直列表间隙bug</h3><p>当我们使用<code>&lt;li&gt;</code>包含一个块级子元素时，IE6(IE7也有可能)会错误地给每条列表元素（<code>&lt;li&gt;</code>）之间添加空隙。<br>解决方法：把<code>&lt;a&gt;</code>flaot并且清除float来解决这个问题；另外一个办法就是触发<code>&lt;a&gt;</code>的hasLayout（如定 义高宽、使用zoom:1;）；也可以给<code>&lt;li&gt;</code> 定义display:inline;来解决此问题；另外还有一个极有趣的方法，给包含的文本末尾添加一个空格。</p>
 <h3 id="31-IE6中的-hover"><a href="#31-IE6中的-hover" class="headerlink" title="31.IE6中的:hover"></a>31.IE6中的:hover</h3><p>在IE6中，除了(需要有href属性)才能触发:hover行为，这妨碍了我们实现许多鼠标触碰效果，但还是有一些法子是可以解决它的。最好是不要用:hover来实现重要的功能，仅仅只用它来强化效果。</p>
 <h3 id="32-IE6调整窗口大小的-Bug"><a href="#32-IE6调整窗口大小的-Bug" class="headerlink" title="32.IE6调整窗口大小的 Bug"></a>32.IE6调整窗口大小的 Bug</h3><p>当把body居中放置，改变IE浏览器大小的时候，任何在body里面的相对定位元素都会固定不动了。解决办法：给body定义position:relative;就行了。</p>
 
@@ -346,13 +346,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2015/07/30/this/">IE6bug</a></p>
+        <p><span>本文标题:</span><a href="/2015/07/10/postName/">IE6bug</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">LONG</a></p>
-        <p><span>发布时间:</span>2015-07-30, 09:40:16</p>
-        <p><span>最后更新:</span>2016-07-29, 09:14:22</p>
+        <p><span>发布时间:</span>2015-07-10, 16:29:16</p>
+        <p><span>最后更新:</span>2016-07-29, 11:09:26</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2015/07/30/this/" title="IE6bug">http://yoursite.com/2015/07/30/this/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/07/30/this/　　作者: LONG" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2015/07/10/postName/" title="IE6bug">http://yoursite.com/2015/07/10/postName/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/07/10/postName/　　作者: LONG" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -364,10 +364,16 @@
 
     <nav id="article-nav">
         
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2015/07/30/this/">
+                    IE6bug
+                </a>
+            </div>
+        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2015/07/10/postName/">
-                    IE6bug
+                <a href="/2015/06/28/git/">
+                    git命令
                 </a>
             </div>
         
@@ -435,13 +441,15 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2015/07/30/this/" title="上一篇: IE6bug">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2015/07/10/postName/" title="下一篇: IE6bug">
+            <a href="/2015/06/28/git/" title="下一篇: git命令">
                 <i class="fa fa-angle-right"></i>
             </a>
         
