@@ -15,16 +15,16 @@
 
 
 
-<meta name="description" content="1.设置名字和邮箱$git config –global user.name “your name”$git config –global user.email “your email”">
+<meta name="description" content="1.行内元素水平居中text-align:center对图片，按钮，文字等行内元素（display为inline或inline-block等）进行水平居中，可对元素或者父元素使用text-align:center">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git命令">
-<meta property="og:url" content="http://yoursite.com/2015/06/28/git/index.html">
+<meta property="og:title" content="CSS布局--居中">
+<meta property="og:url" content="http://yoursite.com/2015/06/10/CSS/index.html">
 <meta property="og:site_name" content="LONG's Blog">
-<meta property="og:description" content="1.设置名字和邮箱$git config –global user.name “your name”$git config –global user.email “your email”">
-<meta property="og:updated_time" content="2016-07-29T09:06:20.444Z">
+<meta property="og:description" content="1.行内元素水平居中text-align:center对图片，按钮，文字等行内元素（display为inline或inline-block等）进行水平居中，可对元素或者父元素使用text-align:center">
+<meta property="og:updated_time" content="2016-08-03T09:56:44.923Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git命令">
-<meta name="twitter:description" content="1.设置名字和邮箱$git config –global user.name “your name”$git config –global user.email “your email”">
+<meta name="twitter:title" content="CSS布局--居中">
+<meta name="twitter:description" content="1.行内元素水平居中text-align:center对图片，按钮，文字等行内元素（display为inline或inline-block等）进行水平居中，可对元素或者父元素使用text-align:center">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -56,7 +56,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>git命令 | LONG&#39;s Blog</title>
+<title>CSS布局--居中 | LONG&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -268,11 +268,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="[layout]-git" class="article article-type-[layout]" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="[layout]-CSS" class="article article-type-[layout]" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/06/28/git/" class="article-date">
-      <time datetime="2015-06-28T02:29:16.000Z" itemprop="datePublished">2015-06-28</time>
+      <a href="/2015/06/10/CSS/" class="article-date">
+      <time datetime="2015-06-10T02:29:16.000Z" itemprop="datePublished">2015-06-10</time>
 </a>
 
 
@@ -287,7 +287,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      git命令
+      CSS布局--居中
     </h1>
   
 
@@ -305,19 +305,16 @@
       
           
         <p><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
-<h3 id="1-设置名字和邮箱"><a href="#1-设置名字和邮箱" class="headerlink" title="1.设置名字和邮箱"></a>1.设置名字和邮箱</h3><p>$git config –global user.name “your name”<br>$git config –global user.email “your email”<br><a id="more"></a></p>
+<h3 id="1-行内元素水平居中text-align-center"><a href="#1-行内元素水平居中text-align-center" class="headerlink" title="1.行内元素水平居中text-align:center"></a>1.行内元素水平居中<code>text-align:center</code></h3><p>对图片，按钮，文字等行内元素（display为inline或inline-block等）进行水平居中，可对元素或者父元素使用<code>text-align:center</code><br><a id="more"></a></p>
 <p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
-<h3 id="2-建立版本库（仓库）"><a href="#2-建立版本库（仓库）" class="headerlink" title="2.建立版本库（仓库）"></a>2.建立版本库（仓库）</h3><p>$mkdir filename  //创建空目录<br>$cd filename        //进入目录<br>$pwd             //显示当前目录<br>$git init            //把这个目录变成Git可以管理的仓库</p>
-<h3 id="3-把文件添加到版本库"><a href="#3-把文件添加到版本库" class="headerlink" title="3.把文件添加到版本库"></a>3.把文件添加到版本库</h3><p>$git add readme.txt         //  把文件添加到仓库，可以添加多次git add hello.txt<br>$git commit -m “information”    //把文件提交到仓库，-m后面是提交说明，commit 可以提交多个文件<br>$git status            //查看结果，掌握仓库当前的状态<br>$git diff    #是工作区(work dict)和暂存区(stage)的比较<br>$git diff –cached    #是暂存区(stage)和分支(master)的比较</p>
-<h3 id="4-版本回退"><a href="#4-版本回退" class="headerlink" title="4.版本回退"></a>4.版本回退</h3><p>git log命令显示从最近到最远的提交日志<br>git log –pretty=oneline每条提交日志以一行显示<br>Git必须知道当前是哪个版本，HEAD表示当前版本，上个版本HEAD^，上上个HEAD^^<br>git reset –hard HEAD^        //返回上一个版本<br>git reset –hard commit_id                //返回某个版本<br>git reflog                            //查看历史每次提交的日志<br>这样即使回到之前的版本，还是可以再回到现在的版本</p>
-<h3 id="5-管理修改"><a href="#5-管理修改" class="headerlink" title="5.管理修改"></a>5.管理修改</h3><p>$git diff HEAD – readme.txt命令可以查看工作区和版本库里面最新版本的区别<br>$git checkout – filename            //可以丢弃工作区的修改（–前后有空格）<br> 一：文件自修改后还没有放到暂存区，撤销后就回到和版本库一样的状态<br>二：文件已添加到暂存区，又做了修改，撤销后就回到添加到暂存区的状态<br>当git add 提交到暂存区，在commit之前，可以使用git reset HEAD filename（HEAD表示最新版本）可以把暂存区的修改<br>撤掉，此时工作区内容并没有撤–销修改，然后再使用git checkout – filename ，丢弃工作区的修改</p>
-<h3 id="6-删除文件"><a href="#6-删除文件" class="headerlink" title="6.删除文件"></a>6.删除文件</h3><p>$rm filename            //  把工作区中的文件删除，也可以直接在文件管理器中删除<br>$git rm filename            //从版本库中删除（工作区中也删除了）<br>只是从工作区把文件删除，$git checkout – filename 可以恢复<br>从版本库中删除，但是没有commit，$git reset HEAD filename 然后$git checkout –filename,可以恢复<br>从版本库中删除，并且commit,只能版本回退才能恢复</p>
-<h3 id="7-远程仓库"><a href="#7-远程仓库" class="headerlink" title="7.远程仓库"></a>7.远程仓库</h3><p>1）创建SSH.key<br>$ssh-keygen -t rsa -C “your email”<br>然后可以再用户目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，前者是私钥，不能泄露出去。<br>后者是公钥<br>登陆Github，打开Account settings–&gt;SSH Keys—&gt;Add SSH Key，在key文本框里粘贴id_rsa.pub文件内容<br>2）添加远程库<br>登陆Github，右上角，Create a new repo—创建一个新仓库,创建之后，新仓库有个SSH（HTTPS也行），里面就是新仓库的地址<br>$git remote add origin address（新仓库SSH/HTTPS） 在本地仓库目录下，与之关联<br>$git push -u origin master            //  把本地库的所有内容推送到远程库<br>时间上市把当前分支master推送到远程，由于远程库是空的，当第一次推送master 分支时，加上-u参数，Git不但会把本地master分支内容推送上远程master分支，还会把本地master分支和远程master分支关联，以后推送或者拉取，可以简化命令<br>3）从远程库克隆<br>$git clone address（仓库SSH/HTTPS）</p>
-<h3 id="8-分支管理"><a href="#8-分支管理" class="headerlink" title="8.分支管理"></a>8.分支管理</h3><p>$git checkout -b dev            //创建并切换  相当于$git branch dev（创建）$git checkout dev（切换），两条命令<br>$ git branch            //查看所有分支，带*号的分支表示当前分支<br>$ git merge dev            //表示合并指定分支到当前分支<br>$ git branch -d dev            //删除分支，合并完成后就可以删除分支了<br>$ git log –graph –pretty=oneline –abbrev-commit //查看分支合并情况</p>
-<h3 id="9-分支管理策略"><a href="#9-分支管理策略" class="headerlink" title="9.分支管理策略"></a>9.分支管理策略</h3><p>Fast forward模式下，删除分支后，会丢掉分支的信息<br>强制禁用Fast forward模式，Git会在merge是生成一个新的commit，这样从分支历史上可以看出分支信息<br>$git merge –no-ff -m “（说明描述）” dev<br>实际工作中，master分支应该是非常稳定的，仅用来发布新版本，干活都在新分支上，等到版本发布时，再把新分支合并</p>
-<h3 id="10-bug分支"><a href="#10-bug分支" class="headerlink" title="10.bug分支"></a>10.bug分支</h3><p>当你在dev分支上工作进行到一半，没法提交，而此时接到要修复一个bug的任务，可以使用Git的stash功能，<br>把当前的工作现场封存起来，等以后恢复现场后继续工作<br>$ git stash                        //封存现场<br>确定在哪个分支上修复bug，假定在master上修复，就从master上创建临时分支<br>修复完成后，切换到master，并完成合并，最后删除临时分支，回到原来的分支工作<br>$git stash list            //查看封存的工作现场<br>$git stash apply        //恢复现场，此时stash内容并未删除<br>$git stash drop        //删除stash内容<br>$git stash pop         //恢复现场并且删除stash<br>$git stash apple stash@{0}        //指定恢复哪个现场</p>
-<h3 id="11-git-branch-D"><a href="#11-git-branch-D" class="headerlink" title="11.$git branch -D "></a>11.$git branch -D <name></name></h3><p>丢弃一个没有被合并过的分支</p>
-<h3 id="12-多人协作"><a href="#12-多人协作" class="headerlink" title="12.多人协作"></a>12.多人协作</h3><p>远程仓库默认名称是origin<br>$git remote         //查看远程库信息<br>$git remote -v         //显示远程库详细信息<br>推送分支：把该分支上的所有本地提交推送给远程库<br>$git push origin master<br>推送其他分支，例如dev        $git push origin dev<br>抓取分支<br>当从远程库clone时，默认只能看到本地master分支，如果要在dev分支上开发，就必须创建远程origin的dev<br>分支到本地<br>$git checkout -b dev origin/dev<br> 当多人向origin/dev分支同时提交推送时，推送失败，因为共同的修改有冲突，这时候用 $git pull把最新的提交从<br> origin/dev上转下来，然后本地合并，再推送<br>如果git pull提示”no tracking information“,说明本地分支和远程分支的链$git branch –set-upstream branch-name origin/branch-name</p>
+<h3 id="2-定宽块级元素水平居中margin-0-auto"><a href="#2-定宽块级元素水平居中margin-0-auto" class="headerlink" title="2.定宽块级元素水平居中margin:0 auto;"></a>2.定宽块级元素水平居中<code>margin:0 auto;</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.container&#123;</div><div class="line">	width:500px;    /*元素设置定宽*/</div><div class="line">	height:200px;  </div><div class="line">	margin:0 auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="3-使用display-table-margin-0-auto-水平居中"><a href="#3-使用display-table-margin-0-auto-水平居中" class="headerlink" title="3.使用display:table;margin:0 auto;水平居中"></a>3.使用<code>display:table;margin:0 auto;</code>水平居中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.child&#123;</div><div class="line">	display:table;</div><div class="line">	width:100px;</div><div class="line">	height:100px;</div><div class="line">	margin: 0 auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="4-使用display-table-cell垂直水平居中"><a href="#4-使用display-table-cell垂直水平居中" class="headerlink" title="4.使用display:table-cell垂直水平居中"></a>4.使用display:table-cell垂直水平居中</h3><p>对于那些不是表格的元素，我们可以通过<code>display:table-cell</code> 来把它模拟成一个表格单元格，这样就可以利用表格的居中特性。但是，这种方法只能在IE8+,谷歌，火狐等浏览器上使用，IE6，IE7都无效。<br><figure class="highlight plain"><figcaption><span>html></span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;title&gt;div居中&lt;/title&gt;</div><div class="line">    &lt;style type=&quot;text/css&quot; &gt;</div><div class="line">        body&#123;</div><div class="line">            padding:0;</div><div class="line">            margin:0;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">      .parent&#123;</div><div class="line">          display:table-cell;</div><div class="line">          vertical-align: middle;</div><div class="line">          text-align: center;</div><div class="line">          width: 200px;</div><div class="line">          height:200px;</div><div class="line">          margin:0 auto;</div><div class="line">          background-color: pink;</div><div class="line">       &#125;</div><div class="line">      .child&#123;</div><div class="line">          display: inline-block;</div><div class="line">          width: 100px;</div><div class="line">          height: 100px;</div><div class="line">          background-color: deeppink;</div><div class="line">      &#125;</div><div class="line">    &lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line">    &lt;div class=&quot;child&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="5-单行或多行文本的垂直居中"><a href="#5-单行或多行文本的垂直居中" class="headerlink" title="5.单行或多行文本的垂直居中"></a>5.单行或多行文本的垂直居中</h3><p>父元素高度确定的情况下，<br>单行文本设置父元素的height和line-height一致即可；<br>多行文本在使用<code>vertical-align:middle</code>的时候，由于对齐的基线是用行高的基线作为标记，故需要设置<code>line-height</code>或设置<code>display:table-cell</code>;</p>
+<h3 id="6-绝对定位垂直水平居中"><a href="#6-绝对定位垂直水平居中" class="headerlink" title="6.绝对定位垂直水平居中"></a>6.绝对定位垂直水平居中</h3><p>此法只适用于那些我们已经知道它们的宽度或高度的元素。</p>
+<p>绝对定位进行居中的原理是通过把这个绝对定位元素的left或top的属性设为50%,这个时候元素并不是居中的，而是比居中的位置向右或向左偏了这个元素宽度或高度的一半的距离，所以需要使用一个负的margin-left或margin-top的值来把它拉回到居中的位置，这个负的margin值就取元素宽度或高度的一半。</p>
+<p>####垂直水平居中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">.parent&#123;</div><div class="line">          position:relative;/*父元素相对定位*/</div><div class="line">          width: 500px;</div><div class="line">          height:300px;</div><div class="line">          background-color: pink;</div><div class="line">      &#125;</div><div class="line">      .child&#123;</div><div class="line">          position: absolute;</div><div class="line">          left:50%;</div><div class="line">          top:50%;</div><div class="line">          width: 300px;</div><div class="line">          height: 200px;</div><div class="line">          margin: -100px 0 0 -150px;/*margin-left为child宽度的一半，margin-top为child高度的一半*/</div><div class="line">          background-color: deeppink;</div><div class="line">      &#125;</div></pre></td></tr></table></figure></p>
+<h3 id="7-另一种绝对定位居中"><a href="#7-另一种绝对定位居中" class="headerlink" title="7.另一种绝对定位居中"></a>7.另一种绝对定位居中</h3><p>此法同样只适用于那些我们已经知道它们的宽度或高度的元素，并且遗憾的是它只支持IE9+,谷歌，火狐等符合w3c标准的现代浏览器。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">.parent&#123;</div><div class="line">          position:relative;/*父元素相对定位*/</div><div class="line">          width: 500px;</div><div class="line">          height:300px;</div><div class="line">          background-color: pink;</div><div class="line">      &#125;</div><div class="line">      .child&#123;</div><div class="line">          position: absolute;</div><div class="line">          width: 300px;/*宽高需要固定*/</div><div class="line">          height: 200px;</div><div class="line">          left:0;</div><div class="line">          right:0;/*left和right必须配对出现来控制水平方向，top、bottom同理*/</div><div class="line">          top:0;</div><div class="line">          bottom:0;</div><div class="line">          margin:auto;/*这句也是需要的，0 auto水平居中，auto 0 垂直居中*/</div><div class="line">          background-color: deeppink;</div><div class="line">      &#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -326,13 +323,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2015/06/28/git/">git命令</a></p>
+        <p><span>本文标题:</span><a href="/2015/06/10/CSS/">CSS布局--居中</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">LONG</a></p>
-        <p><span>发布时间:</span>2015-06-28, 10:29:16</p>
-        <p><span>最后更新:</span>2016-07-29, 17:06:20</p>
+        <p><span>发布时间:</span>2015-06-10, 10:29:16</p>
+        <p><span>最后更新:</span>2016-08-03, 17:56:44</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2015/06/28/git/" title="git命令">http://yoursite.com/2015/06/28/git/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/06/28/git/　　作者: LONG" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2015/06/10/CSS/" title="CSS布局--居中">http://yoursite.com/2015/06/10/CSS/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/06/10/CSS/　　作者: LONG" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -345,17 +342,11 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2015/07/10/postName/">
-                    IE6bug
+                <a href="/2015/06/28/git/">
+                    git命令
                 </a>
             </div>
         
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2015/06/10/CSS/">
-                    CSS布局--居中
-                </a>
-            </div>
         
     </nav>
 
@@ -365,7 +356,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-设置名字和邮箱"><span class="toc-number">1.</span> <span class="toc-text">1.设置名字和邮箱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-建立版本库（仓库）"><span class="toc-number">2.</span> <span class="toc-text">2.建立版本库（仓库）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-把文件添加到版本库"><span class="toc-number">3.</span> <span class="toc-text">3.把文件添加到版本库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-版本回退"><span class="toc-number">4.</span> <span class="toc-text">4.版本回退</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-管理修改"><span class="toc-number">5.</span> <span class="toc-text">5.管理修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-删除文件"><span class="toc-number">6.</span> <span class="toc-text">6.删除文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-远程仓库"><span class="toc-number">7.</span> <span class="toc-text">7.远程仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-分支管理"><span class="toc-number">8.</span> <span class="toc-text">8.分支管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-分支管理策略"><span class="toc-number">9.</span> <span class="toc-text">9.分支管理策略</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-bug分支"><span class="toc-number">10.</span> <span class="toc-text">10.bug分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-git-branch-D"><span class="toc-number">11.</span> <span class="toc-text">11.$git branch -D </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-多人协作"><span class="toc-number">12.</span> <span class="toc-text">12.多人协作</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-行内元素水平居中text-align-center"><span class="toc-number">1.</span> <span class="toc-text">1.行内元素水平居中text-align:center</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-定宽块级元素水平居中margin-0-auto"><span class="toc-number">2.</span> <span class="toc-text">2.定宽块级元素水平居中margin:0 auto;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-使用display-table-margin-0-auto-水平居中"><span class="toc-number">3.</span> <span class="toc-text">3.使用display:table;margin:0 auto;水平居中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-使用display-table-cell垂直水平居中"><span class="toc-number">4.</span> <span class="toc-text">4.使用display:table-cell垂直水平居中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-单行或多行文本的垂直居中"><span class="toc-number">5.</span> <span class="toc-text">5.单行或多行文本的垂直居中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-绝对定位垂直水平居中"><span class="toc-number">6.</span> <span class="toc-text">6.绝对定位垂直水平居中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-另一种绝对定位居中"><span class="toc-number">7.</span> <span class="toc-text">7.另一种绝对定位居中</span></a></li></ol>
         
     </div>
     <style>
@@ -401,7 +392,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"git命令　| LONG's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"CSS布局--居中　| LONG's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -421,7 +412,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2015/07/10/postName/" title="上一篇: IE6bug">
+            <a href="/2015/06/28/git/" title="上一篇: git命令">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -429,9 +420,7 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2015/06/10/CSS/" title="下一篇: CSS布局--居中">
-                <i class="fa fa-angle-right"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
 
